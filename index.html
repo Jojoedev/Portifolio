@@ -2,15 +2,16 @@
 <html>
 <head>
 	<title>index</title>
-<h5 id="home"> </h5>
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="profile.css">
+</head>
 <body id="body">
+<!--<h5 id="home"> </h5> -->
 <!--<div id="test"> This is testing </div>-->
 <!--<h1 id="h1"> Welcome to my page!!! </h1> -->
 <!--<h1 id="greeting"> </h1> -->
 <nav id="nav">
-	<li> <a href="#">Home</a> </li>
+	<li id="home"> <a href="#">Home</a> </li>
 	<li> <a href="#profile">About</a> </li>
 	<li> <a href="#images">Projects</a> </li>
 	<li> <a href="#fr">Technologies</a> </li>
@@ -88,9 +89,7 @@
 <style>
 body{
 background: rgb(60, 40, 80);
-padding: 20px;
-margin: 5px;
-border: 10px;
+font-family: arial;
 
 }
 
@@ -122,6 +121,8 @@ text-align: center;
 color: white;
 font-size: 20px;
 line-height: 30px;
+font-weight: bolder;
+cursor: pointer;
 }
 
 #push{
@@ -145,23 +146,24 @@ p{
 #nav{
 display: flex;
 color: green;
-padding: 8px;
 background: teal;
-box-shadow: 3px 3px ;
-margin-top: -22px;
-height: 30px;
-/*
-border: green solid 5px;
-border-radius: 10px; */
+box-shadow: 3px 3px red;
+height: 40px;
+width: 100%; 
 }
 
 li,a {
-	padding-left: 10px;
+	padding: 10px;
 	text-decoration: none;
 	list-style: none;
 	font-size: 25px;
 	color:white;
-	line-height: 30px;
+	line-height: 25px;
+
+}
+
+a: hover {
+	color: black;
 }
 
 
@@ -176,13 +178,14 @@ li,a {
 	cursor: pointer;
 }
 
+
+
 #image {
 display: flex;
 flex-wrap: wrap;
 transition: all;
 cursor: pointer;
-padding-left: 150px;
-/*align-items: center;*/
+justify-content: center;
 
 
 }
@@ -196,11 +199,9 @@ padding-left: 150px;
 
 #images{
 	height: 305px;
-	padding: 10px;
+	margin: 10px;
 	width: 300px;
-	margin-top: 20px;
-	grid-row: all;
-	
+		
 }
 
 img {
@@ -286,11 +287,82 @@ h2{
 {
 	height: 25px;
 	display: inline-grid;
+	size: 20px;
+}
 
+#footer img {
+	background: teal;
+	border-radius: 20px;
+}
 
+#footer {
+	background: teal;
+	border-radius: 5px;
+}
 
+@media screen and (max-width: 720px)
+{
+li,a {
+	padding: 5px;
+	font-size: 20px;
+	line-height: 30px;
+}
+#nav{
+display: flex;
+color: green;
+background: teal;
+box-shadow: 3px 3px gold;
+width: 100%; 
+}
+	#profile, #works, h2{
+font-size: 15px;
+line-height: 15px;
+}
+#profilepix 
+{
+	width: 80px;
+	height:100px;
 	
 }
+#btn , #btn1{
+	color: black;
+	font-size: 10px;
+	background: gold;
+	
+}
+}
+
+@media screen and (max-width: 495px)
+{
+li,a {
+	padding: 2px;
+	font-size: 15px;
+	line-height: 20px;
+}
+#nav{
+width: 100%; 
+}
+#profilepix 
+{
+	width: 60px;
+	height:80px;
+	
+}
+
+@media screen and (max-width: 336px)
+{
+li,a {
+	padding: 1px;
+	font-size: 12px;
+	line-height: 10px;
+}
+#nav{
+width: 100%; 
+}
+}
+
+
+
 
 </style>
 
@@ -371,7 +443,7 @@ greeting.style.color="green"
  </script>
  <br><br>
  <footer id="footer">
- 				<img id = "socialmedia" src="image16_ca.jpg">+2347032626688
+ 				<img id = "socialmedia" src="image16_ca.jpg">+2347032626688:
  				 				Lagos, Nigeria
  					<img id = "socialmedia" src="image14_ma.jpg"> Jojoe_dev@gmail.com
  					 <img id = "socialmedia" src="image11_tw.jpg"> @Jojoe_dev
