@@ -20,63 +20,64 @@
 
 </nav>
 <h2 id="h2">Hey, I am Jonas!! </h2>
-
+<div class = "profile-img-container">
 <img id = "profilepix" src="Jojoe.jpg">
 
-<div id="profile"> I am a passionate software developer and chartered accountant. I have several years of work experience in finance, accounting and taxation among others.<p> </p><span id="more" className="readlesstext"> <p> I work at Electronic Payplus Limited, a payment solution company as assistant manager, finance and accounts. <p> I am a fast learner and open for a career in Software development. My motivation comes from the need to offer solutions to myriads of problems facing humanity through software development</p><!-- <p> I have leadership experience having led four member audit team on several audit engagements, four member staff in Finance and accounts department at Westgate Lifecare and currently have staff under my purview. <p>I enthusiastically look forward to hearing from you soon.</p>  -->Thank you.  
+<div id="profile"> I am a passionate software developer and chartered accountant. I have several years of work experience in finance, accounting and taxation among others.<p> </p><span id="more" className="readlesstext"> <br> <p> I work at Electronic Payplus Limited, a payment solution company as assistant manager, finance and accounts.</p> <br><p> I am a fast learner and open for a career in Software development. My motivation comes from the need to offer solutions to myriads of problems facing humanity through software development</p><!-- <p> I have leadership experience having led four member audit team on several audit engagements, four member staff in Finance and accounts department at Westgate Lifecare and currently have staff under my purview. <p>I enthusiastically look forward to hearing from you soon.</p>  -->Thank you.  
 
 <!--
 <br> Sincerely, 
 <p> Odogwu, Jonas  </p>
 -->
 </span>
-
-
 </div>
-
+ 
 <button id="btn"> Read more!! </button>
 <button id="btn1">Read less!!</button>
-<br> <br>
+</div>
+<br> <br> <br>
 
 <div id = "works"><a href="#">Below are some of my projects</a>   </div>
-<div id=image>
-<div>
-<img id="images" src="Calculator.JPG">
 
-<p id="textinfo">  </p>
-</div>
-<div>
-<img id="images" src="Todo.JPG">
-<p id="textinfo">  </p>
+<div class = "image-container">
+	<div>
+	<img id="images" src="Calculator.JPG">
+	<p id="textinfo">  </p>
+	</div>
+	<div>
+	<img id="images" src="Todo.JPG">
+	<p id="textinfo">  </p>
+	</div>
+
+	<div>
+	<img id="images" src="seamgo.JPG">
+	<p id="textinfo">  </p> 
+	</div>
+	<div>
+	<img id="images" src="login.JPG">
+	<p id="textinfo">  </p>
+	</div>
+	<div>
+	<img id="images" src="Todo.JPG">
+	<p id="textinfo">  </p>
+	</div>
+
+
+	<div>
+	<img id="images" src="deb.JPG">
+	<p id="textinfo"> </p>
+	</div>
+	<div>
+	<img id="images" src="login.JPG">
+	<p id="textinfo">   </p>
+	</div>
+	<div>
+	<img id="images" src="deb1.JPG">
+	<p id="textinfo">  </p>
+	</div>
 </div>
 
-<div>
-<img id="images" src="seamgo.JPG">
-<p id="textinfo">  </p> 
-</div>
-<div>
-<img id="images" src="login.JPG">
-<p id="textinfo">  </p>
-</div>
-<div>
-<img id="images" src="Todo.JPG">
-<p id="textinfo">  </p>
-</div>
 
-
-<div>
-<img id="images" src="deb.JPG">
-<p id="textinfo"> </p>
-</div>
-<div>
-<img id="images" src="login.JPG">
-<p id="textinfo">   </p>
-</div>
-<div>
-<img id="images" src="deb1.JPG">
-<p id="textinfo">  </p>
-</div>
-</div>
 <br><br>
 <div id = "frameworks">
 	<img id = "fr" src="html.JPG">
@@ -89,6 +90,12 @@
  </div>
 
 <style>
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
 body{
 background: rgb(60, 40, 80);
 font-family: arial;
@@ -98,8 +105,9 @@ font-family: arial;
 #profilepix 
 {
 	width: 100px;
-	height:120px;
+	height:130px;
 	float: left;
+	padding: 10px;
 }
 
 #frameworks
@@ -107,9 +115,11 @@ font-family: arial;
 	text-align: center;	
 }
 
-
-
-#profile{
+.profile-img-container{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.profile-img-container #profile{
 text-align: justify;
 color: white;
 font-size: 20px;
@@ -137,7 +147,20 @@ margin-left: auto;
 
 }
 
- 
+ .image-container{
+ 	background: linear-gradient(dodgerblue, #87a444, #24aa55);
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	position: relative;
+ 	justify-content: center;
+ 	
+ }
+
+.image-container{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 /*
 p{
 	color: white;
@@ -153,7 +176,7 @@ box-shadow: 3px 3px red;
 height: 30px;
 width: 100%; 
 list-style: none;
-margin-top: -8px;
+
 
 }
 
@@ -544,7 +567,7 @@ greeting.style.color="green"
  	<br>
  <!--<li> <a id="homy" href="#home"> Move to the top</a> </li>	-->
  <div id ="homy2" > <a id="" href="#home"> Move to the top</a> </div>				
-<div class = "copyright"> Designed by Jojoe_dev; 2021 </div>
+<div class = "copyright"> Copyright:2021:Jojoe_dev </div>
 
 <hr> 
 </body>
